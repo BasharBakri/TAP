@@ -6,57 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/3becf95dff.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
 
 <body>
+
   <nav>
+    <input type="radio" id="home-radio" name="nav-radio" checked>
+    <input type="radio" id="about-radio" name="nav-radio">
+    <input type="radio" id="contact-radio" name="nav-radio">
     <ul>
       <li>
-        <i class="fa-solid fa-house"></i>
-        <span class="navText">
-          Home
-        </span>
+        <label for="home-radio">
+          <i class="fa-solid fa-house"></i>
+          <span class="nav-text">
+            Home
+          </span>
+        </label>
       </li>
       <li>
-        <i class="fa-solid fa-user"></i>
-        <span class="navText">
-          Contact Me
-        </span>
+        <label for="about-radio">
+          <i class="fa-solid fa-user"></i>
+          <span class="nav-text">
+            About Me
+          </span>
+        </label>
       </li>
       <li>
-        <i class="fa-solid fa-phone"></i>
-        <span class="navText">
-          Contact Me
-        </span>
+        <label for="contact-radio">
+          <i class="fa-solid fa-phone"></i>
+          <span class="nav-text">
+            Contact Me
+          </span>
+        </label>
       </li>
     </ul>
   </nav>
   <main>
     <section class="text">
-      <h2>Welcome to my site</h2>
-      <h1>Hi, I'm Bashar, a
-        <br>
-        Full-Stack <span>Developer</span>
+      <h2><span class="light-blue-text">Welcome to my site</span></h2>
+      <h1><span class="dark-blue-text">Hi, I'm Bashar, a
+          <br>
+          Full-Stack</span> <span class="orange-text">Developer.</span>
       </h1>
-      <p>I am a professional and dedicated business professional with over four years of experience in the business
-        field, working in various roles such as business & start-ups trainer, coordinator, and consultant. I have been
-        involved in start-ups, training, logistics, and innovation projects, collaborating with diverse teams and
-        organizations. I have excellent communication and written skills in both English and Arabic
-        with several years of experience, transitioning to Full-Stack and web <span>development</span></p>
+      <p>
+        I'm Junior Full-Stack Developer, with a passion for dedication, hard-work, clear communication, and providing
+        the best user-experience. I graduated a 720 hours Full-Stack web development boot-camp, where I learned HTML,
+        CSS, JavaScript, React, NodeJS, and more. <input type="checkbox" id="toggle" class="toggle"><label for="toggle"
+          class="label">See More...</label> <br><br><span class="more">
+          I am also a business professional with over four years of experience. I have been involved in
+          start-ups, training, logistics, and innovation projects, collaborating with diverse teams and organizations. I
+          have excellent communication and written skills in both English and Arabic</span>
+      </p>
       <article class="CtaButtons">
-        <button>Hire me !</button>
-        <button>See My Project</button>
+        <button class="hire-me">Hire me !</button>
+        <button class="see-projects">See My Project</button>
       </article>
     </section>
     <aside>
-      <img src="./images/self 2.jpg">
+      <div class="image-border">
+        <img class="self-image" src="./images/self 2.jpg">
+      </div>
     </aside>
   </main>
-
 </body>
 
 </html>
