@@ -6,7 +6,6 @@
 
 html {
   overflow-y: scroll;
-  overflow-x: unset;
 }
 
 body {
@@ -55,7 +54,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  gap: 2rem 0;
+  gap: 1.8rem 0;
 }
 
 /* titles */
@@ -76,7 +75,7 @@ h2 {
 
 /* giant text */
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
@@ -145,6 +144,7 @@ button {
   padding: 0.2rem 1.5rem;
   border-radius: 0.3rem;
   font-size: 1.1rem;
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
@@ -154,6 +154,7 @@ button:hover {
 
 .hire-me {
   background-color: var(--darkblue);
+  border-color: var(--darkblue);
   color: white;
 }
 
@@ -163,6 +164,8 @@ button:hover {
 
 .see-projects {
   color: var(--darkblue);
+  border-color: var(--lightblue);
+
   background-color: white;
 }
 
@@ -235,7 +238,7 @@ button:hover {
     p {
       text-align: center;
       font-size: 0.8rem;
-      max-width: 22rem;
+      max-width: 20rem;
     }
 
     section {
@@ -245,6 +248,10 @@ button:hover {
 
     .self-image {
       max-width: 250px;
+    }
+
+    .CtaButtons {
+      display: initial;
     }
 
     button {
